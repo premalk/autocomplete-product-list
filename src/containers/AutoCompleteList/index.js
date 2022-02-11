@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import Search from '../../components/Search';
+import Products from '../../components/Products';
 
 const Container = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ const AutoCompleteList = () => {
   return (
     <Container>
       <Search />
+      <Products />
     </Container>
   );
 };

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { array } from 'prop-types';
 
 const Table = styled.table`
   border-collapse: collapse;
@@ -37,7 +38,7 @@ const TableCell = styled.td`
   text-align: center;
 `;
 
-const Products = () => {
+const Products = (data) => {
   return (
     <>
       <Table>
@@ -52,26 +53,29 @@ const Products = () => {
           </tr>
         </THead>
         <tbody>
-          <TableItem>
-            <TableCell>Product 1</TableCell>
-            <TableCell>123</TableCell>
-            <TableCell>edfe</TableCell>
-            <TableCell>edfe</TableCell>
-            <TableCell>edfe</TableCell>
-            <TableCell>edfe</TableCell>
-          </TableItem>
-          <TableItem>
-            <TableCell>Product 2</TableCell>
-            <TableCell>343</TableCell>
-            <TableCell>dkfhjh</TableCell>
-            <TableCell>edfe</TableCell>
-            <TableCell>edfe</TableCell>
-            <TableCell>edfe</TableCell>
-          </TableItem>
+          {data &&
+            data.data.map((obj) => {
+              const { title, gtin, gender, sale_price, price, image_link } = obj;
+
+              return (
+                <TableItem key={gtin}>
+                  <TableCell>{title}</TableCell>
+                  <TableCell>{gtin}</TableCell>
+                  <TableCell>{gender}</TableCell>
+                  <TableCell>{sale_price}</TableCell>
+                  <TableCell>{price}</TableCell>
+                  <TableCell>{image_link}</TableCell>
+                </TableItem>
+              );
+            })}
         </tbody>
       </Table>
     </>
   );
+};
+
+Products.prototypes = {
+  data: array
 };
 
 export default Products;

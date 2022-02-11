@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Search from '../../components/Search';
 import Products from '../../components/Products';
 
+import useQuery from '../../hooks/useQuery';
+
 const Container = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -10,10 +12,11 @@ const Container = styled.div`
 `;
 
 const AutoCompleteList = () => {
+  const { data, isLoading } = useQuery();
   return (
     <Container>
       <Search />
-      <Products />
+      {!isLoading ? <Products data={data} /> : null}
     </Container>
   );
 };

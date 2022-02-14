@@ -54,11 +54,11 @@ const Products = (data) => {
         </THead>
         <tbody>
           {data &&
-            data.data.map((obj) => {
+            data.data.map((obj, index) => {
               const { title, gtin, gender, sale_price, price, image_link } = obj;
 
               return (
-                <TableItem key={gtin}>
+                <TableItem key={index}>
                   <TableCell>{title}</TableCell>
                   <TableCell>{gtin}</TableCell>
                   <TableCell>{gender}</TableCell>

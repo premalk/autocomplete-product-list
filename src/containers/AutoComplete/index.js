@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styled from 'styled-components';
 
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
@@ -7,12 +6,6 @@ import Products from '../../components/Products';
 
 import useTable from '../../hooks/useTable';
 import useQuery from '../../hooks/useQuery';
-
-const Container = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-`;
 
 const AutoCompleteList = () => {
   const [page, setPage] = useState(1);
@@ -31,16 +24,20 @@ const AutoCompleteList = () => {
     }
   };
 
-  const searchCallback = (value) => {
+  const callback = (value) => {
     filterSearch(value);
   };
 
   return (
-    <Container>
-      <Search searchCallback={searchCallback} />
-      <Products data={slice} />
-      <Pagination range={range} slice={slice} setPage={setPage} page={page} />
-    </Container>
+    <div className="container">
+      <Search callback={callback} />
+      {slice.length ? (
+        <>
+          <Products data={slice} />
+          <Pagination range={range} slice={slice} setPage={setPage} page={page} />
+        </>
+      ) : null}
+    </div>
   );
 };
 

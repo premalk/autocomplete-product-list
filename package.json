@@ -2,7 +2,6 @@
   "name": "autocomplete-product-list",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "jest": {
     "transformIgnorePatterns": [
       "/node_modules/(?!d3|d3-array|internmap|delaunator|robust-predicates)"

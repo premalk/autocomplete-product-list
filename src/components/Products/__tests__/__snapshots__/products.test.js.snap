@@ -50,7 +50,9 @@ Object {
               39.95 EUR
             </td>
             <td>
-              https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg
+              <img
+                src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+              />
             </td>
           </tr>
           <tr
@@ -72,7 +74,9 @@ Object {
               39.95 EUR
             </td>
             <td>
-              https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg
+              <img
+                src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+              />
             </td>
           </tr>
         </tbody>
@@ -125,7 +129,9 @@ Object {
             39.95 EUR
           </td>
           <td>
-            https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg
+            <img
+              src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+            />
           </td>
         </tr>
         <tr
@@ -147,7 +153,9 @@ Object {
             39.95 EUR
           </td>
           <td>
-            https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg
+            <img
+              src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+            />
           </td>
         </tr>
       </tbody>

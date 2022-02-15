@@ -26,7 +26,9 @@ const Products = (data) => {
                   <td>{gender}</td>
                   <td>{sale_price}</td>
                   <td>{price}</td>
-                  <td>{image_link}</td>
+                  <td>
+                    <img src={image_link} />
+                  </td>
                 </tr>
               );
             })}

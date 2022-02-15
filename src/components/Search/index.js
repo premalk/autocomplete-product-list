@@ -1,15 +1,24 @@
-import styled from 'styled-components';
+import { func } from 'prop-types';
 
-const Input = styled.input`
-  width: 70%;
-  padding: 1.5em;
-  margin: 1.5em;
-  border: none;
-  border-radius: 3px;
-`;
+const Search = ({ callback }) => {
+  const onChange = (e) => {
+    callback(e.target.value);
+  };
 
-const Search = () => {
-  return <Input type="text" placeholder="Search" />;
+  return (
+    <input
+      data-testid="filter-search"
+      className="styled-input"
+      type="text"
+      placeholder="Search"
+      id="search"
+      onChange={onChange}
+    />
+  );
+};
+
+Search.propTypes = {
+  callback: func
 };
 
 export default Search;

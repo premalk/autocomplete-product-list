@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing product list Snapshot Test of product 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <table
+        class="styled-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Title
+            </th>
+            <th>
+              Gtin
+            </th>
+            <th>
+              Gender
+            </th>
+            <th>
+              Price
+            </th>
+            <th>
+              Sale price
+            </th>
+            <th>
+              Image link
+            </th>
+            <th>
+              Additional images
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            data-testid="Weekday THURSDAY Jeans Slim Fit black"
+          >
+            <td>
+              Weekday THURSDAY Jeans Slim Fit black
+            </td>
+            <td>
+              2001007926858
+            </td>
+            <td>
+              female
+            </td>
+            <td>
+              39.95 EUR
+            </td>
+            <td>
+              39.95 EUR
+            </td>
+            <td>
+              <img
+                src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+              />
+            </td>
+            <td>
+              <button>
+                Additional images
+              </button>
+            </td>
+          </tr>
+          <tr
+            data-testid="Weekday THURSDAY Jeans Slim Fit white"
+          >
+            <td>
+              Weekday THURSDAY Jeans Slim Fit white
+            </td>
+            <td>
+              2001007926858
+            </td>
+            <td>
+              female
+            </td>
+            <td>
+              39.95 EUR
+            </td>
+            <td>
+              39.95 EUR
+            </td>
+            <td>
+              <img
+                src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+              />
+            </td>
+            <td>
+              <button>
+                Additional images
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>,
+  "container": <div>
+    <table
+      class="styled-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+          <th>
+            Gtin
+          </th>
+          <th>
+            Gender
+          </th>
+          <th>
+            Price
+          </th>
+          <th>
+            Sale price
+          </th>
+          <th>
+            Image link
+          </th>
+          <th>
+            Additional images
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          data-testid="Weekday THURSDAY Jeans Slim Fit black"
+        >
+          <td>
+            Weekday THURSDAY Jeans Slim Fit black
+          </td>
+          <td>
+            2001007926858
+          </td>
+          <td>
+            female
+          </td>
+          <td>
+            39.95 EUR
+          </td>
+          <td>
+            39.95 EUR
+          </td>
+          <td>
+            <img
+              src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+            />
+          </td>
+          <td>
+            <button>
+              Additional images
+            </button>
+          </td>
+        </tr>
+        <tr
+          data-testid="Weekday THURSDAY Jeans Slim Fit white"
+        >
+          <td>
+            Weekday THURSDAY Jeans Slim Fit white
+          </td>
+          <td>
+            2001007926858
+          </td>
+          <td>
+            female
+          </td>
+          <td>
+            39.95 EUR
+          </td>
+          <td>
+            39.95 EUR
+          </td>
+          <td>
+            <img
+              src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
+            />
+          </td>
+          <td>
+            <button>
+              Additional images
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

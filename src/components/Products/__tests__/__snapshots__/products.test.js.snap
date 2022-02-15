@@ -28,6 +28,9 @@ Object {
             <th>
               Image link
             </th>
+            <th>
+              Additional images
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -54,6 +57,11 @@ Object {
                 src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
               />
             </td>
+            <td>
+              <button>
+                Additional images
+              </button>
+            </td>
           </tr>
           <tr
             data-testid="Weekday THURSDAY Jeans Slim Fit white"
@@ -77,6 +85,11 @@ Object {
               <img
                 src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
               />
+            </td>
+            <td>
+              <button>
+                Additional images
+              </button>
             </td>
           </tr>
         </tbody>
@@ -107,6 +120,9 @@ Object {
           <th>
             Image link
           </th>
+          <th>
+            Additional images
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -133,6 +149,11 @@ Object {
               src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
             />
           </td>
+          <td>
+            <button>
+              Additional images
+            </button>
+          </td>
         </tr>
         <tr
           data-testid="Weekday THURSDAY Jeans Slim Fit white"
@@ -156,6 +177,11 @@ Object {
             <img
               src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1N/00/HQ/11/WEB21N00H-Q11@12.4.jpg"
             />
+          </td>
+          <td>
+            <button>
+              Additional images
+            </button>
           </td>
         </tr>
       </tbody>

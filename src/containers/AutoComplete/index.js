@@ -3,13 +3,18 @@ import { useState } from 'react';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
 import Products from '../../components/Products';
+import AdditionalImages from '../../components/AdditionalImages';
 
 import useTable from '../../hooks/useTable';
 import useQuery from '../../hooks/useQuery';
 
+import { imageArray } from '../../utils';
+
 const AutoCompleteList = () => {
   const [page, setPage] = useState(1);
   const [products, setProducts] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [imagelist, setImagelist] = useState([]);
 
   const { data } = useQuery();
   const { slice, range } = useTable(products, page);
@@ -28,12 +33,18 @@ const AutoCompleteList = () => {
     filterSearch(value);
   };
 
+  const handleClick = (images) => {
+    setIsOpen(true);
+    setImagelist(imageArray(images));
+  };
+
   return (
     <div className="container">
+      <AdditionalImages isOpen={isOpen} setIsOpen={setIsOpen} imagelist={imagelist} />
       <Search callback={callback} />
       {slice.length ? (
         <>
-          <Products data={slice} />
+          <Products data={slice} handleClick={handleClick} />
           <Pagination range={range} slice={slice} setPage={setPage} page={page} />
         </>
       ) : null}

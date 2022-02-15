@@ -12,6 +12,7 @@ const Pagination = ({ range, setPage, page, slice }) => {
     <div className="pagination">
       {range.map((el, index) => (
         <button
+          data-testid={`page-${el}`}
           key={index}
           className={`styled-button ${page === el ? 'activeButton' : 'inactiveButton'}`}
           onClick={() => {

@@ -5,7 +5,16 @@ const Search = ({ callback }) => {
     callback(e.target.value);
   };
 
-  return <input className="styled-input" type="text" placeholder="Search" onChange={onChange} />;
+  return (
+    <input
+      data-testid="filter-search"
+      className="styled-input"
+      type="text"
+      placeholder="Search"
+      id="search"
+      onChange={onChange}
+    />
+  );
 };
 
 Search.propTypes = {

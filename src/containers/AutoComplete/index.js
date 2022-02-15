@@ -17,10 +17,10 @@ const AutoCompleteList = () => {
   const filterSearch = (value) => {
     if (!value) setProducts([]);
     else {
-      const refinedData = data.filter((obj) => {
+      const filteredList = data.filter((obj) => {
         return obj.title.indexOf(value) !== -1;
       });
-      setProducts([...refinedData]);
+      setProducts([...filteredList]);
     }
   };
 

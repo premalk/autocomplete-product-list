@@ -20,7 +20,7 @@ const Products = (data) => {
               const { title, gtin, gender, sale_price, price, image_link } = obj;
 
               return (
-                <tr key={index}>
+                <tr key={index} data-testid={title}>
                   <td>{title}</td>
                   <td>{gtin}</td>
                   <td>{gender}</td>
